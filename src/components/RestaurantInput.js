@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { addRestaurant } from '../actions/restaurants';
 import { connect } from 'react-redux';
+import { connect } from './components/restaurants';
 
 export class RestaurantInput extends Component {
 
@@ -52,10 +53,18 @@ export class RestaurantInput extends Component {
 
 const mapStateToProps = (state) => {
   return {
+<<<<<<< HEAD
     restaurants: state.restaurants
+=======
+    items: state.items
+>>>>>>> bc7a9b118eed3301b4625abcc9f4f5d0292fe218
   };
 };
 
 
 //connect this component by wrapping RestaurantInput below
+<<<<<<< HEAD
 export default connect(mapStateToProps, { addRestaurant })(RestaurantInput);
+=======
+export default connect(mapStateToProps, { addItem })(App);
+>>>>>>> bc7a9b118eed3301b4625abcc9f4f5d0292fe218
